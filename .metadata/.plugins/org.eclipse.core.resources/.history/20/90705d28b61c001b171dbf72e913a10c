@@ -1,0 +1,3 @@
+function setBorder(){
+	document.getElementById("i1");
+}
