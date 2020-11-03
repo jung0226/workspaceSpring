@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="webSpring00"/>
+<aop-project name="webSpring01"/>
+</aop-reference-model>

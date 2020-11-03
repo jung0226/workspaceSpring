@@ -1,0 +1,17 @@
+
+11월 03, 2020 13:16:32.594 NEW SESSION
+11월 03, 2020 13:16:32.594 [6680:7692:1103/131632.593:ERROR:device_event_log_impl.cc(208)] [13:16:32.593] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 03, 2020 13:26:27.187 [1103/132627.186:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 03, 2020 14:14:54.441 [6680:7692:1103/141454.441:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:14:55.447 [6680:7692:1103/141455.447:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:14:56.589 [6680:7692:1103/141456.588:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:14:57.588 [6680:7692:1103/141457.588:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:14:58.776 [6680:7692:1103/141458.776:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:15:00.777 [6680:7692:1103/141500.777:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:15:02.776 [6680:7692:1103/141502.776:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:15:04.776 [6680:7692:1103/141504.776:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:15:06.112 [6680:7692:1103/141506.112:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:15:07.127 [6680:7692:1103/141507.127:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:15:08.777 [6680:7692:1103/141508.776:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:15:10.793 [6680:7692:1103/141510.793:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s
+11월 03, 2020 14:15:10.946 [6680:7692:1103/141510.946:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 14.913 s for first_image_paint 14.82 s

@@ -1,0 +1,48 @@
+package com.bitcamp.webDbcp.board;
+
+import java.util.List;
+
+import com.bitcamp.webDbcp.register.RegisterDaoInterface;
+import com.bitcamp.webDbcp.register.RegisterVO;
+
+public class BoardDAO implements BoardDAOInterface {
+
+	@Override
+	public List<BoardVO> getAllRecord() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int writeBoard(BoardVO vo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int editBoard(BoardVO vo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteBoard(int no, String userid) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void selectBoard(BoardVO vo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void hitCount(int no) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+}

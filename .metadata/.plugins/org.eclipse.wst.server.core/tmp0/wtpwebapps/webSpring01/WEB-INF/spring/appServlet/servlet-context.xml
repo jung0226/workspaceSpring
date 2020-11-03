@@ -13,7 +13,7 @@
 	<annotation-driven />
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
-	<resources mapping="/resources/**" location="/resources/" />
+	<resources mapping="/css/**" location="/css/" />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -21,12 +21,13 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.bitcamp.webDbcp" />
 	<!-- 오라클 서버 위치와 계정, 비밀번호 등을 이용하여 DataSource 객체 생성 -->
 	<beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<beans:property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></beans:property>
 		<beans:property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"></beans:property>
 		<beans:property name="password" value="tiger"></beans:property>
 	</beans:bean>
-	
+	<beans:bean name="regDao" class="com.bitcamp.webDbcp.register.RegisterDAO"></beans:bean>
+	<beans:bean name="bDao" class="com.bitcamp.webDbcp.board.BoardDAO"></beans:bean>
+	<context:component-scan base-package="com.bitcamp.webDbcp" />
 </beans:beans>

@@ -1,0 +1,5 @@
+package com.bitcamp.webDbcp.board;
+
+public interface BoardDAOInterface {
+
+}
