@@ -6,6 +6,13 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	function delcheck(){
+		if(confirm("글을 삭제하시겠습니까?")){
+			location.href="/webDbcp/boardDel?no=${vo.no}";
+		}
+	}
+</script>
 </head>
 <body>
 <div>
@@ -22,7 +29,7 @@
 	<div>
 		<c:if test="${userid==vo.userid }">
 			<a href="/webDbcp/boardEdit?no=${vo.no }">수정</a>
-		삭제
+			<a href="javascript:delcheck()">삭제</a>
 		</c:if>
 	</div>
 </div>

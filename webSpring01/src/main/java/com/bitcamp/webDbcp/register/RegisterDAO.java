@@ -28,17 +28,34 @@ public class RegisterDAO extends DBConn implements RegisterDaoInterface {
 
 	@Override
 	public int regInsert(RegisterVO vo) {
+		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
 	public int regUpdate(RegisterVO vo) {
+		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
+	public String regIdSearch(RegisterVO vo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String regPwdSearch(RegisterVO vo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
 	public int regDelete(RegisterVO vo) {
+		// TODO Auto-generated method stub
 		return 0;
 	}
+
+
 
 }

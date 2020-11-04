@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -88,6 +89,23 @@ public class BoardController {
 			mav.setViewName("redirect:boardView");
 		}else {
 			mav.addObject("msg", "글 수정");
+			mav.setViewName("board/result");
+		}
+		return mav;
+	}
+	//글 삭제
+	@RequestMapping("/boardDel")
+	public ModelAndView boardDelete(@RequestParam("no") int no, HttpServletRequest req) {
+		HttpSession session = req.getSession();
+		String userid = (String)session.getAttribute("userid");
+		
+		int result = bDao.deleteBoard(no, userid);
+		
+		ModelAndView mav = new ModelAndView();
+		if(result>0) {//글이 삭제된 경우 리스트
+			mav.setViewName("redirect:boardList");
+		}else {//삭제 실패시 글 내용 보기
+			mav.addObject("msg", "글 삭제");
 			mav.setViewName("board/result");
 		}
 		return mav;

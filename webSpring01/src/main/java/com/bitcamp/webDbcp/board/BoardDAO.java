@@ -80,8 +80,21 @@ public class BoardDAO extends DBConn implements BoardDAOInterface {
 
 	@Override
 	public int deleteBoard(int no, String userid) {
-		// TODO Auto-generated method stub
-		return 0;
+		int cnt = 0;
+		try {
+			dbConn();
+			sql = "delete from freeboard where no=? and userid=?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, no);
+			pstmt.setString(2, userid);
+			
+			cnt = pstmt.executeUpdate();
+		}catch(Exception e) {
+			System.out.println("글 삭제 에러 발생-> "+e.getMessage());
+		}finally {
+			dbClose();
+		}
+		return cnt;
 	}
 
 	@Override

@@ -2,4 +2,5 @@
 <aop-reference-model>
 <aop-project name="webSpring00"/>
 <aop-project name="webSpring01"/>
+<aop-project name="webSpring02jdbcTemplate2"/>
 </aop-reference-model>

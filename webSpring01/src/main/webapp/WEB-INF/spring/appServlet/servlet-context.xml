@@ -25,6 +25,7 @@
 	<beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<beans:property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></beans:property>
 		<beans:property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"></beans:property>
+		<beans:property name="username" value="scott"></beans:property>
 		<beans:property name="password" value="tiger"></beans:property>
 	</beans:bean>
 	<beans:bean name="regDao" class="com.bitcamp.webDbcp.register.RegisterDAO"></beans:bean>
