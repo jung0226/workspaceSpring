@@ -47,4 +47,35 @@ public class BoardDAO {
 		return template.query(sql, new BeanPropertyRowMapper<BoardVO>(BoardVO.class));
 		
 	}
+	public BoardVO selectBoard(int no) {
+		String sql = "select no, subject, userid, hit, writedate, content from freeboard "
+				+ "where no =?";
+		
+		return template.queryForObject(sql, new Object[] {no}, new BeanPropertyRowMapper<BoardVO>(BoardVO.class));
+	}	
+	public BoardVO selectEditBoard(int no) {
+		String sql = "select no, subject, content, userid from freeboard where no=?";
+		return template.queryForObject(sql, new BeanPropertyRowMapper<BoardVO>(BoardVO.class), no);
+	}
+	public int updateBoard(final BoardVO vo) {
+		int cnt=0;
+		try {
+			String sql = "update freeboard set subject=?, content=? where no=? and userid=?";
+			cnt= template.update(sql, new PreparedStatementSetter() {			
+				@Override
+				public void setValues(PreparedStatement ps) throws SQLException {
+					ps.setString(1, vo.getSubject());
+					ps.setString(2, vo.getContent());
+					ps.setInt(3, vo.getNo());
+					ps.setString(4, vo.getUserid());
+				}
+			});
+		}catch(Exception e) {
+		}
+		return cnt;
+	}
+	public int boardDelete(int no, String userid) {
+		String sql="delete from freeboard where no="+no+" and userid='"+userid+"'";
+		return template.update(sql);
+	}
 }

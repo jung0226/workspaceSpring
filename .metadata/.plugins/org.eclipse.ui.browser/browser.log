@@ -19,3 +19,11 @@
 11월 04, 2020 09:38:07.984 NEW SESSION
 11월 04, 2020 09:38:07.984 [5280:3608:1104/093807.983:ERROR:device_event_log_impl.cc(208)] [09:38:07.982] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
 11월 04, 2020 09:48:05.291 [1104/094805.287:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 05, 2020 09:45:59.705 NEW SESSION
+11월 05, 2020 09:45:59.705 [3260:12720:1105/094559.704:ERROR:device_event_log_impl.cc(208)] [09:45:59.704] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 05, 2020 09:55:53.923 [1105/095553.921:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 05, 2020 13:09:39.28 [6624:6356:1105/130939.027:ERROR:device_event_log_impl.cc(208)] [13:09:39.027] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 05, 2020 13:19:28.729 [1105/131928.727:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 05, 2020 13:51:31.642 [6624:10176:1105/135131.642:ERROR:socket_stream.cc(219)] Closing stream with result -2
+11월 05, 2020 14:08:23.58 [6624:10176:1105/140823.058:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
