@@ -23,5 +23,11 @@
 		<li>
 			<a href="/myapp/dataList">자료실</a>
 		</li>
+		<li>
+			<a href="/myapp/fileUpload1">업로드1</a>
+		</li>
+		<li>
+			<a href="/myapp/fileUpload2">업로드2</a>
+		</li>
 	</ul>	
 </div>

@@ -9,9 +9,9 @@
 		<li>첨부파일</li>
 		<c:forEach var="vo" items="${list}">
 		<li>${vo.no }</li>
-		<li>${vo.title }</li>
+		<li class="wordCut">${vo.title }</li>
 		<li>${vo.userid }</li>
-		<li>${vo.filename1 }, ${vo.filename2 }</li>
+		<li class="wordCut">${vo.filename1 }, ${vo.filename2 }</li>
 		</c:forEach>
 	</ul>
 
