@@ -19,23 +19,19 @@
 		function replyListSelect() {
 			var url = "/temp/replyList";
 			var data = "no=${vo.no}";
-			$
-					.ajax({
-						url : url,
-						data : data,
-						success : function(result) {
-							var $result = $(result);
-							var tag = "";
-							$result
-									.each(function(i, v) {
-										tag += "<li><div>" + v.userid + " ("
-												+ v.writedate + ") ";
-										if (v.userid == '${logId}') {//'abcd' abcd
-											tag += "<input type='button' class='edit' value='수정'/>";
-											tag += "<input type='button' class='del' value='삭제' title='"+v.re_no+"'/>";
-										}
-										tag += "<br/>" + v.content
-												+ "<hr/></div>";
+			$.ajax({
+					url : url,
+					data : data,
+					success : function(result) {
+						var $result = $(result);
+						var tag = "";
+						$result.each(function(i, v) {
+							tag += "<li><div>" + v.userid + " ("+ v.writedate + ") ";
+								if (v.userid == '${logId}') {//'abcd' abcd
+										tag += "<input type='button' class='edit' value='수정'/>";
+										tag += "<input type='button' class='del' value='삭제' title='"+v.re_no+"'/>";
+									}
+										tag += "<br/>" + v.content+ "<hr/></div>";
 										//로그인한 아이디와 현재댓글의 아이디가 같으면 수정폼
 										if (v.userid == '${logId}') {
 											tag += "<div style='display:none'><form>";
