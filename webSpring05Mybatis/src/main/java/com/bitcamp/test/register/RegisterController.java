@@ -40,8 +40,12 @@ public class RegisterController {
 			ses.setAttribute("logStatus", "Y");
 			mav.setViewName("redirect:/");
 		}
-		return mav;
-		
+		return mav;		
+	}
+	@RequestMapping("/logout")
+	public String logout(HttpSession s) {
+		s.invalidate();
+		return "home";
 	}
 	
 }

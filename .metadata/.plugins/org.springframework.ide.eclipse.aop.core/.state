@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="gachi"/>
 <aop-project name="webSpring00"/>
 <aop-project name="webSpring01"/>
 <aop-project name="webSpring02jdbcTemplate2"/>
+<aop-project name="webSpring05Mybatis"/>
 <aop-project name="webSpring03Fileupload"/>
 <aop-project name="webSpring04Ajax"/>
 </aop-reference-model>

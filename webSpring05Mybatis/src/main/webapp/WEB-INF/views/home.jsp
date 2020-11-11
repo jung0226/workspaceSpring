@@ -7,9 +7,11 @@
 <body>
 <h1>
 	<c:if test="${logStatus!='Y' }"><a href="/test/login">로그인</a></c:if>
-	<c:if test="${logStatus==null && logStatus=='Y' }"><a href="/test/logout">로그아웃</a></c:if>
-	<a href="/test/">게시판</a>
+	<c:if test="${logStatus!=null && logStatus=='Y' }"><a href="/test/logout">로그아웃</a></c:if>
+	<a href="/test/boardList">게시판</a>
+	<a href="/test/answerList">계층형 게시판</a>
 </h1>
 
+<p> <a href="/test/tran">트랜잭션 테스트</a> </p>
 </body>
 </html>

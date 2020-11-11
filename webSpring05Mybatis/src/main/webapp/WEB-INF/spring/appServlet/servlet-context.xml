@@ -43,4 +43,9 @@
 	<beans:bean name="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
 		<beans:constructor-arg index="0" ref="sqlSessionFactory"></beans:constructor-arg>
 	</beans:bean>
+	<!-- transaction설정 : dataSource객체를 이용하여 생성 -->
+	<beans:bean name="transactionManager"
+				class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<beans:constructor-arg name="dataSource" ref="dataSource"></beans:constructor-arg>
+	</beans:bean>
 </beans:beans>

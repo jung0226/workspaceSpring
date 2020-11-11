@@ -1,5 +1,0 @@
-package com.bitcamp.webDbcp.register;
-
-public interface RegisterDaoInterface {
-
-}
