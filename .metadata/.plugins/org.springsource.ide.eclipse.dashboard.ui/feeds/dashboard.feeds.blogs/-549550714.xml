@@ -5,7 +5,40 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-11-11T00:34:51Z</updated>
+  <updated>2020-11-11T13:28:00Z</updated>
+  <entry>
+    <title>Spring Data 2020.0.1 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/11/11/spring-data-2020-0-1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mark Paluch</name>
+    </author>
+    <id>tag:spring.io,2020-11-11:4267</id>
+    <updated>2020-11-11T13:28:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team, I&amp;rsquo;m pleased to announce Spring Data service release &lt;code&gt;2020.0.1&lt;/code&gt;. This service release is built on top of Spring Framework &lt;code&gt;5.3.1&lt;/code&gt; and Reactor &lt;code&gt;2020.0.1&lt;/code&gt;. It contains mostly dependency upgrades and fixes.&lt;/p&gt;
+&lt;p&gt;Spring Data &lt;code&gt;2020.0.1&lt;/code&gt; ships &lt;a href="https://jira.spring.io/issues/?filter=17237"&gt;34 improvements and fixes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release will be picked up by the upcoming Spring Boot &lt;code&gt;2.4.0&lt;/code&gt; release for your convenience.&lt;/p&gt;
+&lt;p&gt;To round things off, here are the links to the individual modules along with their documentation:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Data Commons 2.4.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/2.4.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.4.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.4.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.4.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data JDBC 2.1.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jdbc/2.1.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/2.1.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/2.1.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/2.1.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data JPA 2.4.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/2.4.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jpa/docs/2.4.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jpa/docs/2.4.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jpa/docs/2.4.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Cassandra 3.1.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/3.1.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/cassandra/docs/3.1.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/cassandra/docs/3.1.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/cassandra/docs/3.1.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data MongoDB 3.1.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/3.1.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/3.1.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/3.1.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/3.1.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data KeyValue 2.4.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-keyvalue/2.4.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/keyvalue/docs/2.4.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/keyvalue/docs/2.4.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/keyvalue/docs/2.4.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Neo4j 6.0.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/6.0.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/neo4j/docs/6.0.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/neo4j/docs/6.0.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/neo4j/docs/6.0.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Geode 2.4.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-geode/2.4.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/geode/docs/2.4.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/geode/docs/2.4.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/geode/docs/2.4.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Solr 4.3.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-solr/4.3.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/solr/docs/4.3.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/solr/docs/4.3.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/solr/docs/4.3.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data R2DBC 1.2.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-r2dbc/1.2.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.2.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.2.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.2.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data LDAP 2.4.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-ldap/2.4.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/ldap/docs/2.4.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/ldap/docs/2.4.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/ldap/docs/2.4.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Envers 2.4.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-envers/2.4.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/envers/docs/2.4.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/envers/docs/2.4.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/envers/docs/2.4.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data REST 3.4.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/3.4.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/rest/docs/3.4.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/rest/docs/3.4.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/rest/docs/3.4.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Redis 2.4.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/2.4.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.4.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.4.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.4.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Elasticsearch 4.1.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/4.1.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/4.1.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/4.1.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/4.1.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Couchbase 4.1.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/4.1.1"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/4.1.1/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/4.1.1/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/4.1.1/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - November 10th, 2020</title>
     <link rel="alternate" href="https://spring.io/blog/2020/11/11/this-week-in-spring-november-10th-2020" />
@@ -40,7 +73,7 @@
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
   <entry>
-    <title>Spring Data 2020.0 - New and Noteworthy in Spring Data JDBC 2.1.</title>
+    <title>Spring Data 2020.0 - New and Noteworthy in Spring Data JDBC 2.1</title>
     <link rel="alternate" href="https://spring.io/blog/2020/11/10/spring-data-2020-0-new-and-noteworthy-in-spring-data-jdbc-2-1" />
     <category term="engineering" label="Engineering" />
     <author>
@@ -48,42 +81,42 @@
     </author>
     <id>tag:spring.io,2020-11-05:4260</id>
     <updated>2020-11-10T22:00:00Z</updated>
-    <content type="html">&lt;p&gt;As part of the 2020.0.0 version of Spring Data, we released Spring Data JDBC 2.1.&lt;br/&gt;This article presents the four most interesting changes in this version.&lt;/p&gt;
+    <content type="html">&lt;p&gt;As part of the 2020.0.0 version of Spring Data, we released Spring Data JDBC 2.1. This article presents the four most interesting changes in this version.&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href="#use-code-value-code-on-entity-constructor-arguments"&gt;Use &lt;code&gt;@Value&lt;/code&gt; on entity constructor arguments.&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#rowmapper-and-resultsetextractor-as-beans"&gt;&lt;code&gt;RowMapper&lt;/code&gt; and &lt;code&gt;ResultSetExtractor&lt;/code&gt; as beans.&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#improved-performance-for-entities"&gt;Improved performance for entities.&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#support-of-oracles-temporal-types"&gt;Support of Oracles temporal types.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;h1&gt;&lt;a href="#use-code-value-code-on-entity-constructor-arguments" class="anchor" name="use-code-value-code-on-entity-constructor-arguments"&gt;&lt;/a&gt;Use &lt;code&gt;@Value&lt;/code&gt; on Entity Constructor Arguments&lt;/h1&gt;
+&lt;/ul&gt;&lt;h1&gt;&lt;a href="#use-value-on-entity-constructor-arguments" class="anchor" name="use-value-on-entity-constructor-arguments"&gt;&lt;/a&gt;Use @Value on Entity Constructor Arguments&lt;/h1&gt;
 &lt;p&gt;In some cases, not all the data that goes into an entity comes from the &lt;code&gt;ResultSet&lt;/code&gt; of a query. You now may provide an &lt;code&gt;@Value&lt;/code&gt; annotation with a SPeL expression that is evaluated, and the result is passed as an argument upon construction of the entity.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;private static class WithAtValue {&#xD;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;class WithAtValue {&#xD;
 &#xD;
-  @Id private final Long id;&#xD;
+  private final @Id Long id;&#xD;
   private final @Transient String computed;&#xD;
 &#xD;
-  public WithAtValue(Long id,&#xD;
+ WithAtValue(Long id,&#xD;
       @Value(&amp;quot;#root.first_name&amp;quot;) String computed) {&#xD;
     this.id = id;&#xD;
     this.computed = computed;&#xD;
   }&#xD;
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The example accesses the &lt;code&gt;first_name&lt;/code&gt; column from the &lt;code&gt;ResultSet&lt;/code&gt;, but the SPeL context also has access to the full application context.&lt;br/&gt;Therefore, you have a flexible way to customize the instantiation of your entities.&lt;/p&gt;&lt;h1&gt;&lt;a href="#code-rowmapper-code-and-code-resultsetextractor-code-as-beans" class="anchor" name="code-rowmapper-code-and-code-resultsetextractor-code-as-beans"&gt;&lt;/a&gt;&lt;code&gt;RowMapper&lt;/code&gt; and &lt;code&gt;ResultSetExtractor&lt;/code&gt; as Beans&lt;/h1&gt;
-&lt;p&gt;When you specify the query to be executed for a repository method by using &lt;code&gt;@Query&lt;/code&gt;, you may optionally provide the type of a &lt;code&gt;RowMapper&lt;/code&gt; or &lt;code&gt;ResultSetExtractor&lt;/code&gt; implementation.&lt;br/&gt;However, since the instances created from these types are not Spring beans, they do not participate in dependency injection.&lt;br/&gt;Therefore, you cannot inject other resources that you might want to use into them.&lt;/p&gt;
-&lt;p&gt;You now may instead specify a reference to a bean that implements &lt;code&gt;RowMapper&lt;/code&gt; or &lt;code&gt;ResultSetExtractor&lt;/code&gt; bu using the &lt;code&gt;rowMapperRef&lt;/code&gt; or &lt;code&gt;resultSetExtractorRef&lt;/code&gt; &lt;code&gt;@Query&lt;/code&gt; attributes, respectively:&lt;/p&gt;
+&lt;p&gt;The example accesses the &lt;code&gt;first_name&lt;/code&gt; column from the &lt;code&gt;ResultSet&lt;/code&gt;, but the SPeL context also has access to the full application context. Therefore, you have a flexible way to customize the instantiation of your entities.&lt;/p&gt;&lt;h1&gt;&lt;a href="#rowmapper-and-resultsetextractor-as-beans" class="anchor" name="rowmapper-and-resultsetextractor-as-beans"&gt;&lt;/a&gt;RowMapper and ResultSetExtractor as Beans&lt;/h1&gt;
+&lt;p&gt;When you specify the query to be executed for a repository method by using &lt;code&gt;@Query&lt;/code&gt;, you may optionally provide the type of a &lt;code&gt;RowMapper&lt;/code&gt; or &lt;code&gt;ResultSetExtractor&lt;/code&gt; implementation. However, since the instances created from these types are not Spring beans, they do not participate in dependency injection. Therefore, you cannot inject other resources that you might want to use into them.&lt;/p&gt;
+&lt;p&gt;You now may instead specify a reference to a bean that implements &lt;code&gt;RowMapper&lt;/code&gt; or &lt;code&gt;ResultSetExtractor&lt;/code&gt; but using the &lt;code&gt;rowMapperRef&lt;/code&gt; or &lt;code&gt;resultSetExtractorRef&lt;/code&gt; attributes in &lt;code&gt;@Query&lt;/code&gt;, respectively:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="prettyprint java"&gt;interface CarRepository extends CrudRepository&amp;lt;Car, Long&amp;gt; {&#xD;
 &#xD;
-	@Query(value = &amp;quot;select * from car&amp;quot;, resultSetExtractorRef = &amp;quot;carResultSetExtractorBean&amp;quot;)&#xD;
-	List&amp;lt;Car&amp;gt; findByNameWithResultSetExtractor();&#xD;
+  @Query(value = &amp;quot;select * from car&amp;quot;, resultSetExtractorRef = &amp;quot;carResultSetExtractorBean&amp;quot;)&#xD;
+  List&amp;lt;Car&amp;gt; findByNameWithResultSetExtractor();&#xD;
 &#xD;
-	@Query(value = &amp;quot;select model from car&amp;quot;, rowMapperRef = &amp;quot;customRowMapperBean&amp;quot;)&#xD;
-	List&amp;lt;String&amp;gt; findByNameWithRowMapperBean();&#xD;
+  @Query(value = &amp;quot;select model from car&amp;quot;, rowMapperRef = &amp;quot;customRowMapperBean&amp;quot;)&#xD;
+  List&amp;lt;String&amp;gt; findByNameWithRowMapperBean();&#xD;
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Spring Data JDB looks up the beans in the application context by name.&lt;br/&gt;Since they are normal Spring beans, you can freely inject other beans or really do anything with them that the Spring Framework has to offer.&lt;/p&gt;&lt;h1&gt;&lt;a href="#improved-performance-for-entities" class="anchor" name="improved-performance-for-entities"&gt;&lt;/a&gt;Improved Performance for Entities&lt;/h1&gt;
-&lt;p&gt;Spring Data JDBC entities can have their properties set by a constructor, by a setter, or (in the case of immutable entities) by a with-method.&lt;br/&gt;However, if a property is already set by a constructor, it should not get set by a setter or (probably worse) with-method. This avoids the cost of the method call and possibly instance creation.&lt;br/&gt;However, for this, Spring Data JDBC used to check each property to see if it has a matching constructor parameter.&lt;br/&gt;This test is surprisingly expensive and can be avoided by checking once if there is an all-arguments constructor.&lt;br/&gt;In such a case, there is no need to call any setters at all.&lt;br/&gt;With the latest version, Spring Data JDBC does exactly that, resulting in better performance for entities with all-arguments constructors.&lt;br/&gt;So a new performance tip is to provide all-argument constructors.&lt;/p&gt;&lt;h1&gt;&lt;a href="#support-of-oracles-temporal-types" class="anchor" name="support-of-oracles-temporal-types"&gt;&lt;/a&gt;Support of Oracles Temporal Types&lt;/h1&gt;
-&lt;p&gt;Spring Data JDBC has supported temporal types from the very beginning.&lt;br/&gt;However, when we added official support for Oracle, we discovered that Oracle does return a special proprietary type for temporal types that Spring Data JDBC wasn&amp;rsquo;t able to convert to the normal temporal types (such as &lt;code&gt;java.time.Instant&lt;/code&gt; or similar types).&lt;/p&gt;
-&lt;p&gt;We added support for the conversion.&lt;br/&gt;Using temporal data types should not cause more problems with Oracle than with any other database. They can still cause trouble through the power of time zones and daylight savings time, but that is not our problem to solve.&lt;/p&gt;
+&lt;p&gt;Spring Data JDB looks up the beans in the application context by name. Since they are normal Spring beans, you can freely inject other beans or really do anything with them that the Spring Framework has to offer.&lt;/p&gt;&lt;h1&gt;&lt;a href="#improved-performance-for-entities" class="anchor" name="improved-performance-for-entities"&gt;&lt;/a&gt;Improved Performance for Entities&lt;/h1&gt;
+&lt;p&gt;Spring Data JDBC entities can have their properties set by a constructor, by a setter, or (in the case of immutable entities) by a with-method. However, if a property is already set by a constructor, it should not get set by a setter or (probably worse) with-method. This avoids the cost of the method call and possibly instance creation. However, for this, Spring Data JDBC used to check each property to see if it has a matching constructor parameter. This test is surprisingly expensive and can be avoided by checking once if there is an all-arguments constructor. In such a case, there is no need to call any setters at all. With the latest version, Spring Data JDBC does exactly that, resulting in better performance for entities with all-arguments constructors. So a new performance tip is to provide all-argument constructors.&lt;/p&gt;&lt;h1&gt;&lt;a href="#support-of-oracles-temporal-types" class="anchor" name="support-of-oracles-temporal-types"&gt;&lt;/a&gt;Support of Oracles Temporal Types&lt;/h1&gt;
+&lt;p&gt;Spring Data JDBC has supported temporal types from the very beginning. However, when we added official support for Oracle, we discovered that Oracle does return a special proprietary type for temporal types that Spring Data JDBC wasn&amp;rsquo;t able to convert to the normal temporal types (such as &lt;code&gt;java.time.Instant&lt;/code&gt; or similar types).&lt;/p&gt;
+&lt;p&gt;In this release, we added support for the conversion. Using temporal data types should not cause more problems with Oracle than with any other database. They can still cause trouble through the power of time zones and daylight savings time, but that is not our problem to solve.&lt;/p&gt;
 &lt;p&gt;Enjoy the new features while we work on the next release.&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
@@ -95,7 +128,7 @@
       <name>Arjen Poutsma</name>
     </author>
     <id>tag:spring.io,2020-11-10:4265</id>
-    <updated>2020-11-10T15:37:34Z</updated>
+    <updated>2020-11-10T15:37:00Z</updated>
     <content type="html">&lt;div class="paragraph"&gt;
 &lt;p&gt;If you regularly listen to &lt;a href="https://bootifulpodcast.fm"&gt;A Bootiful Podcast&lt;/a&gt;, you might have heard about the improvements we made to Spring Framework&amp;#8217;s cron support.
 Cron expressions are mostly used in Spring applications through the &lt;a href="https://docs.spring.io/spring-framework/docs/current/reference/html/integration.html#scheduling-annotation-support-scheduled"&gt;&lt;code&gt;@Scheduled&lt;/code&gt; annotation&lt;/a&gt;.
@@ -148,6 +181,9 @@ The &lt;code&gt;parse&lt;/code&gt; method takes the well-known string with six s
 &lt;li&gt;
 &lt;p&gt;A field may be an asterisk (&lt;code&gt;*&lt;/code&gt;), which always stands for &amp;#8220;first-last&amp;#8221;.
 For the day-of-the-month or day-of-the-week fields, a question mark (&lt;code&gt;?&lt;/code&gt;) may be used instead of an asterisk.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Commas (&lt;code&gt;,&lt;/code&gt;) are used to separate items of a list.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Two numbers separated with a hyphen (&lt;code&gt;-&lt;/code&gt;) express a range of numbers.
@@ -1209,37 +1245,6 @@ Artem&lt;/p&gt;
   &lt;li&gt;Spring Data Elasticsearch 3.1.21 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/3.1.21.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/3.1.21.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/3.1.21.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/3.1.21.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Spring Data Couchbase 3.1.21 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/3.1.21.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/3.1.21.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/3.1.21.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/3.1.21.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Batch 4.3 is now GA!</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/10/28/spring-batch-4-3-is-now-ga" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mahmoud Ben Hassine</name>
-    </author>
-    <id>tag:spring.io,2020-10-29:4246</id>
-    <updated>2020-10-28T08:16:00Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring Batch community,&lt;/p&gt;
-&lt;p&gt;On behalf of the team and all contributors, it is my pleasure to announce that Spring Batch 4.3 is now generally available from Maven Central!&lt;/p&gt;
-&lt;p&gt;This release comes with a number of new features, enhancements, and dependency updates. You can find the complete list of changes in the &lt;a href="https://github.com/spring-projects/spring-batch/releases/tag/4.3.0"&gt;release notes&lt;/a&gt;, but here are the major highlights:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Java records support&lt;/li&gt;
-  &lt;li&gt;GraalVM support&lt;/li&gt;
-  &lt;li&gt;New synchronized &lt;code&gt;ItemStreamWriter&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;New &lt;code&gt;JpaCursorItemReader&lt;/code&gt; Implementation&lt;/li&gt;
-  &lt;li&gt;Performance improvements in &lt;code&gt;MongoItemWriter&lt;/code&gt; and &lt;code&gt;RepositoryItemWriter&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;And more!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These features and enhancements have been previously detailed in the following posts:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/17/spring-batch-4-3-0-rc1-available-now"&gt;Spring Batch 4.3.0-RC1 available now!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/13/spring-batch-4-3-0-m2-is-out"&gt;Spring Batch 4.3.0-M2 is out!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/06/26/spring-batch-4-3-0-m1-is-released-now"&gt;Spring Batch 4.3.0-M1 is released now!&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Please note that this release is the last feature branch of the 4.x generation. The next version will be 5.0, and we will share what&amp;rsquo;s coming in it soon, so stay tuned!&lt;/p&gt;
-&lt;p&gt;I would like to thank all contributors who made this release possible! We look forward to your feedback on this release on &lt;a href="https://twitter.com/springbatch"&gt;Twitter&lt;/a&gt;, &lt;a href="https://stackoverflow.com/questions/tagged/spring-batch"&gt;StackOverflow&lt;/a&gt;, and &lt;a href="https://github.com/spring-projects/spring-batch/issues/new/choose"&gt;Github&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-batch"&gt;Spring Batch Home&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-batch/docs/4.3.0/reference/html/index.html"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

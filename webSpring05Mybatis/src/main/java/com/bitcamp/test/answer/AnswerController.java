@@ -6,7 +6,11 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.support.DefaultTransactionDefinition;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -15,32 +19,93 @@ import org.springframework.web.servlet.ModelAndView;
 public class AnswerController {
 	@Autowired
 	SqlSession sqlSession;
+	@Autowired
+	DataSourceTransactionManager transactionManager;// servelt-context에 작성한 변수명이랑 같아야 함.
+
 	@RequestMapping("/answerList")
 	public ModelAndView allList() {
-		AnswerDaoImp dao= sqlSession.getMapper(AnswerDaoImp.class);
-		
+		AnswerDaoImp dao = sqlSession.getMapper(AnswerDaoImp.class);
+
 		List<AnswerVO> list = dao.allRecord();
-		
+
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("list", list);
 		mav.setViewName("answer/list");
-		
+
 		return mav;
 	}
+
 	@RequestMapping("/answerWrite")
 	public String write() {
 
 		return "answer/write";
 	}
-	@RequestMapping(value="/answerWriteOk", method = RequestMethod.POST)
+
+	@RequestMapping(value = "/answerWriteOk", method = RequestMethod.POST)
 	public ModelAndView writeOk(AnswerVO vo, HttpSession ses) {
-		vo.setUserid((String)ses.getAttribute("userid"));
-		AnswerDaoImp dao= sqlSession.getMapper(AnswerDaoImp.class);
+		vo.setUserid((String) ses.getAttribute("userid"));
+		AnswerDaoImp dao = sqlSession.getMapper(AnswerDaoImp.class);
 		int result = dao.recordInsert(vo);
-		
-		ModelAndView mav=new ModelAndView();
+
+		ModelAndView mav = new ModelAndView();
 		mav.setViewName("redirect:answerList");
 		return mav;
+	}
+
+	@RequestMapping("/answerView")
+	public ModelAndView view(int no) {
+		AnswerDaoImp dao = sqlSession.getMapper(AnswerDaoImp.class);
+		AnswerVO vo = dao.recordSelect(no);
+
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("vo", vo);
+		mav.setViewName("answer/view");
+		return mav;
+	}
+
+	@RequestMapping("/replyWriteForm")
+	public String replyWrite(int no, Model model) {
+		model.addAttribute("no", no);
+		return "answer/replyForm";
+	}
+
+	@RequestMapping(value = "/replyWriteFormOk", method = RequestMethod.POST)
+	public ModelAndView replyWriteOk(AnswerVO vo, HttpSession ses) {
+		vo.setUserid((String) ses.getAttribute("userid"));
+
+		// TransactionStatus객체를 구해야 한다.
+		DefaultTransactionDefinition def = new DefaultTransactionDefinition();
+		def.setPropagationBehavior(DefaultTransactionDefinition.PROPAGATION_REQUIRED);
+
+		TransactionStatus status = transactionManager.getTransaction(def);
+
+		// vo.no->원글번호
+		// vo.subject, vo.content -> 답글
+		AnswerDaoImp dao = sqlSession.getMapper(AnswerDaoImp.class);
+
+		// 1. 원 글의 ref, step, lvl을 선택
+		AnswerVO optVO = dao.optionSelect(vo.getNo());
+
+
+		try {
+			// 원글의 lvl보다 큰 레코드를 업데이트
+			dao.lvlUpdate(optVO);
+
+			// 답글을 쓰기한다.
+			vo.setRef(optVO.getRef());
+			vo.setStep(optVO.getStep() + 1);
+			vo.setLvl(optVO.getLvl()+1);
+			int result = dao.replyInsert(vo);
+			
+			transactionManager.commit(status);
+		} catch (Exception e) {
+			e.printStackTrace();
+			transactionManager.rollback(status);
+		}
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("redirect:answerList");
+		return mav;
+
 	}
 
 }

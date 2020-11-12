@@ -33,7 +33,7 @@
 				<c:if test="${vo.step>0 }">
 					☞	
 				</c:if>
-				<a href="/test/answerview?no=${vo.no }">${vo.subject }</a></li>
+				<a href="/test/answerView?no=${vo.no }">${vo.subject }</a></li>
 			<li>${vo.userid }</li>
 			<li>${vo.writedate }</li>
 		</c:forEach>

@@ -24,6 +24,8 @@
 	 		<mvc:mapping path="/boardDel"/>
 	 		<mvc:mapping path="/answerWrite"/>
 	 		<mvc:mapping path="/answerWriteOk"/>
+	 		<mvc:mapping path="/replyWriteForm"/>
+	 		<mvc:mapping path="/replyWriteFormOk"/>
 	 		<bean class="com.bitcamp.test.interceptor.LoginInterceptor"/>
 	 	</mvc:interceptor>
 	 </mvc:interceptors>
